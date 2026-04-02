@@ -34,9 +34,10 @@ from prometheus_client import Counter, Gauge, start_http_server
 # ==================== CONFIGURATION ====================
 @dataclass
 class Config:
-    API_ID: int = int(os.getenv('7526968149')
-    API_HASH: str = os.getenv('V2A6Dagewdc')
-    BOT_TOKEN: str = os.getenv('8771281629:AAFFVq4_ucZ_B1VRNBEZdpDTxMbp4kxEwDs')
+    # Yahan os.getenv ke andar sirf KEY ka naam hota hai, VALUE Render dashboard mein dalte hain
+    API_ID: int = int(os.getenv('API_ID', '7526968149'))
+    API_HASH: str = os.getenv('API_HASH', 'V2A6Dagewdc')
+    BOT_TOKEN: str = os.getenv('BOT_TOKEN', '8771281629:AAFFVq4_ucZ_B1VRNBEZdpDTxMbp4kxEwDs')
     CHANNEL_USERNAME: str = '@solidusaitech1'
     ADMIN_ID: int = 7526968149
     
