@@ -1,0 +1,9 @@
+1. Phir se "Add file" → "Create new file"
+2. File name: package.json
+3. Content paste karo:
+
+{
+  "name": "solidusaitech-bot"
+}
+
+4. Green button "Commit new file"
